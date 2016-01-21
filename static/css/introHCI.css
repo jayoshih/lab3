@@ -12,9 +12,11 @@
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 body {
-     border: 1px dotted gray;
-     padding: 20px;
+     font-family: Verdana, Geneva, sans-serif;
+     background-color: #D0A9F5;
+     padding:20px;
 }
+
 
 .jumbotron {
 	position: relative;
@@ -39,4 +41,112 @@ body {
 
 .project a {
      text-align: center;
+}
+
+
+.project{
+     margin-left:20px;
+     background-color: #E0E6F8;
+     padding:10px;
+     font-size:20px;
+     margin-bottom: 20px;
+     height: 220px;
+}
+
+.project img{
+     height: 200px;
+     width:300px;
+     margin-right:20px;
+}
+
+.jumbotron p.active {
+     color: #1f6ddd;
+}
+
+.thumbnail{
+     cursor:pointer;
+}
+
+
+/**************** Added in styling ****************/
+*{
+     padding:0;
+     margin:0;
+}
+
+#heading{
+     top:0em;
+     width: 100vw;
+     vertical-align: middle;
+     padding:5px;
+}
+
+#heading h1{
+     font-weight:bold;
+}
+
+p{
+     font-style:italic;
+     margin-left:20px;
+}
+
+#content{
+     margin:10px;
+     background-color:white;
+}
+#projects ul{
+     width:100%;
+}
+
+nav{
+     background-color:#EEEEEE;
+     padding:10px;
+}
+
+.btn{
+     color:black;
+     height:100%;
+}
+
+
+a{
+     text-decoration: none;
+     color:black;
+    
+}
+
+a :hover{
+     text-decoration: none;
+     color:blue;
+}
+.subheading{
+     font-size:20pt;
+     margin-top: 50px;
+     border-bottom:1px solid gray;
+}
+
+.icon{
+     width: 20px;
+     height:20px;
+     margin-right:5px;
+
+}
+#profile{
+     height:200px;
+     width:200px;
+}
+.description{
+     margin-top:10px;
+}
+.preview{
+     width:30vw;
+     height:100%;
+     position:absolute;
+     background-color:white;
+     border:1px solid gray;
+     display:none;
+     z-index:1000;
+}
+.preview_active{
+     display:inline-block;
 }

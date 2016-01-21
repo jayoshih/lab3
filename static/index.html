@@ -5,10 +5,17 @@
 	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/introHCI.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./css/introHCI.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,71 +26,123 @@
 </head>
 
 <body>
-	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
-		</div>
+	<div class="text-center jumbotron" id="heading">
+		<h1>Jordan Yoshihara</h1>
+		<p>Computer Science &middot; Cognitive Science &middot; Education Studies</p>
+		<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
+	</div>
+	
+	<div id="content">
+		<nav>
+			<a href="index.html" class="btn bt-default">Projects</a>
+			<a href="about.html" class="btn bt-default">About</a>
 
-
-		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div class="project" id="project1">
-			<a href="" class="thumbnail">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
-			</a>
-		</div>
-		<div class="project" id="project2">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Needfinding</p>
-			</a>
-		</div>
-		<div class="project" id="project3">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
-			</a>
-		</div>
-		<div class="project" id="project4">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div class="project" id="project5">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div class="project" id="project6">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div class="project" id="project7">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div class="project" id="project8">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
-			</a>
+		</nav>
+		<div id="projects" class="container">
+			<h4 class="subheading">Research Projects</h4>
+			<ul class="list-unstyled">
+				<li id="project1" class="project">
+					<img class = "thumbnail pull-left" src="images/mcgill.jpg" alt="Error loading image">
+					Fostering Improved Learning Outcomes in Math
+					<p class="project-description">Key components of a blended classroom to foster student learning</p>
+				</li>
+				<li id="project2" class="project">
+					<img src="images/math.jpg" class = "thumbnail pull-left"  alt="Error loading image">
+					Fostering Motivation in Math
+					<p class="project-description">Principles of motivation applied to a classroom</p>
+				</li>
+				<li id="project3" class="project">
+					<img src="images/pazzaz.jpg" class = "thumbnail pull-left" alt="Error loading image">
+					Elementary ALEKS Pilot, Pazzaz
+					<p class="project-description">Teaching math in a k-6 grade environment</p>
+				</li>
+				<li id="project4" class="project">
+					<img src="images/precalculus.jpg" class = "thumbnail pull-left"  alt="Error loading image">
+					Precalculus ALEKS Pilot, UC San Diego
+					<p class="project-description">Using online resources to enhance students' learning experiences</p>
+				</li>
+				<li id="project5" class="project">
+					<img src="images/soapbox.gif" class = "thumbnail pull-left"  alt="Error loading image">
+					All-American STEM Soap Box Derby Program, San Diego
+					<p class="project-description">Program to bring community of learners together in STEM</p>
+				</li>
+			</ul>
+			<h4 class="subheading">Programming Projects</h4>
+			<ul class="list-unstyled">
+				<li id="project6" class="project">
+					<img src="images/rider.jpg" alt="Error loading image" class = "thumbnail pull-left">
+					Rider Relief Program Form
+					<p class="project-description">Sign up forms for government rider relief program</p>
+				</li>
+				<li id="project7" class="project">
+					<img src="images/payroll.jpg" class = "thumbnail pull-left"  alt="Error loading image">
+					Payroll Application
+					<p class="project-description">Payroll application to keep track of payroll history</p>
+				</li>
+				<li id="project8" class="project">
+					<img src="images/inventory.jpg" class = "thumbnail pull-left"  alt="Error loading image">
+					Inventory Application
+					<p class="project-description">Inventory application to help companies keep track of their inventory</p>
+				</li>
+				<li id="project9" class="project">
+					<img src="images/stress.jpg" class = "thumbnail pull-left" alt="Error loading image">
+					Stress Management Mobile Application
+					<p class="project-description">Prototype for application to relieve stress</p>
+				</li>
+				<li id="project10" class="project">
+					<img src="images/menu.jpg" class = "thumbnail pull-left" alt="Error loading image">
+					Mobile Menu Application
+					<p class="project-description">Mobile application to allow users to look up and rate restaurants</p>
+				</li>
+				<li id="project11" class="project">
+					<img src="images/recipe.jpg" class = "thumbnail pull-left" alt="Error loading image">
+					Recipe-Sharing Mobile Application
+					<p class="project-description">Mobile application to allow students to share recipes with each other</p>
+				</li>
+				<li id="project12" class="project">
+					<img src="images/club.jpg" class = "thumbnail pull-left" alt="Error loading image">
+					Club Membership Management Application
+					<p class="project-description">Application to keep club business in order</p>
+				</li>
+			</ul>
 		</div>
 	</div>
+<!--	<div class="pull-right" id="preview">
+	</div>-->
 
+
+	 <form id="projectForm" role="form">
+    <div class="form-group">
+      <label for="project">Please change the project:</label>
+      <select class="form-control" id="project">
+        <option value="#project1">Fostering Improved Learning Outcomes in Math</option>
+        <option value="#project2">Fostering Motivation in Math</option>
+        <option value="#project3">Elementary ALEKS Pilot, Pazzaz</option>
+        <option value="#project4">Precalculus ALEKS Pilot, UC San Diego</option>
+        <option value="#project5">All-American STEM Soap Box Derby Program, San Diego</option>
+        <option value="#project6">Rider Relief Program Form</option>
+        <option value="#project7">Payroll Application for Windows</option>
+        <option value="#project8">Inventory Application for Windows</option>
+        <option value="#project9">Stress Management Mobile Application</option>
+        <option value="#project10">Mobile Menu Application</option>
+        <option value="#project11">Recipe-Sharing Mobile Application</option>
+        <option value="#project12">Club Membership Management Application</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="width">To width (in pixels):</label>
+      <input type="number" class="form-control" id="width" placeholder="Width">
+    </div>
+    <div class="form-group">
+      <label for="description">And to description:</label>
+      <input type="text" class="form-control" id="description" placeholder="Project desicription">
+    </div>
+    <button id="submitBtn" type="button" class="btn btn-default">Submit</button>
+  </form>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
 </body>
 </html>
